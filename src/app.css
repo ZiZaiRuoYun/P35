@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; }
+
+/* 断行与媒体自适应（A+C方案） */
+.editor, .ProseMirror, .ProseMirror p, .ProseMirror h1, .ProseMirror h2, .ProseMirror h3,
+.ProseMirror h4, .ProseMirror h5, .ProseMirror h6, .ProseMirror li, .ProseMirror blockquote {
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+.ProseMirror img, .ProseMirror video { max-width: 100%; height: auto; }
+.ProseMirror pre { white-space: pre-wrap; overflow: auto; }
+.ProseMirror table { width: 100%; table-layout: fixed; }
+.ProseMirror td, .ProseMirror th { word-break: break-word; }
